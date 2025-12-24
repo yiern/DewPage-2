@@ -447,7 +447,7 @@ export default function App() {
     useState("Strawberry");
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DewPage-2">
       <Routes>
         <Route
           path="/"
