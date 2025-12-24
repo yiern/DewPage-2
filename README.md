@@ -22,4 +22,6 @@
   4. Click Save
 
   After running `npm run deploy`, the `gh-pages` branch will be automatically created/updated with the built files.
+
+  **Troubleshooting:** If you see 404 errors or the app doesn't load, see [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for detailed instructions.
   
