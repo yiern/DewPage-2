@@ -9,6 +9,30 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Georgia&family=Playfair+Display:wght@700&family=Lora:wght@400;600&family=Crimson+Text:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+      <!-- Suppress browser extension console errors -->
+      <script>
+        // Catch and suppress browser extension errors early
+        (function() {
+          var originalConsoleError = console.error;
+          console.error = function() {
+            var args = Array.prototype.slice.call(arguments);
+            var errorMessage = args.join(' ');
+            
+            // Filter out browser extension errors
+            if (errorMessage && (
+              errorMessage.includes('Extension context invalidated') ||
+              errorMessage.includes('message port closed') ||
+              errorMessage.includes('runtime.lastError') ||
+              errorMessage.includes('chrome.runtime')
+            )) {
+              return; // Suppress this error
+            }
+            
+            // Log all other errors normally
+            originalConsoleError.apply(console, arguments);
+          };
+        })();
+      </script>
       <!-- GitHub Pages SPA redirect handler -->
       <script>
         (function(l) {
