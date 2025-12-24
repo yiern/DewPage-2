@@ -2,7 +2,7 @@
       "name": "DewPage",
       "version": "0.1.0",
       "private": true,
-      "homepage": "https://yiern.github.io/Dew-Segamat",
+      "homepage": "https://yiern.github.io/DewPage-2",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -60,7 +60,7 @@
             "dev": "vite",
             "build": "vite build",
             "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
+            "deploy": "gh-pages -d build"
             
       }
 }
