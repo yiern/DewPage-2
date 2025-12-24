@@ -1,0 +1,33 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Georgia&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&family=Lato:wght@400;700&family=Raleway:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Ubuntu:wght@400;700&family=Crimson+Text:wght@400;600&family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&display=swap');
+
+/* Font Family Definitions */
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-georgia: 'Georgia', serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-opensans: 'Open Sans', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-crimson: 'Crimson Text', serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-merriweather: 'Merriweather', serif;
+}
+
+/* Utility font classes used across pages */
+.font-sans { font-family: var(--font-inter); }
+.font-serif { font-family: var(--font-georgia); }
+.font-mono { font-family: Menlo, Monaco, 'Courier New', monospace; }
+.font-poppins { font-family: var(--font-poppins); }
+.font-roboto { font-family: var(--font-roboto); }
+.font-opensans { font-family: var(--font-opensans); }
+.font-lato { font-family: var(--font-lato); }
+.font-raleway { font-family: var(--font-raleway); }
+.font-montserrat { font-family: var(--font-montserrat); }
+.font-ubuntu { font-family: var(--font-ubuntu); }
+.font-crimson { font-family: var(--font-crimson); }
+.font-playfair { font-family: var(--font-playfair); }
+.font-merriweather { font-family: var(--font-merriweather); }
