@@ -10,8 +10,8 @@ export default function AboutUs() {
       <Nav />
       
       <PageHeader 
-        imageUrl={assets.HeaderPics[0]}
-        imageAlt="Fruit orchard farm"
+        imageUrl={assets.AboutUs[2]}
+        imageAlt="Layout of house"
         verticalShiftPercent= {50}
       />
       

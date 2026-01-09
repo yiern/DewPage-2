@@ -16,6 +16,13 @@ interface Experience {
   imagePosition?: string;
 }
 
+const berry_picking = assets.Experience[0]
+const fruits_harvesting = assets.Experience[1]
+const hot_spring = assets.Experience[2]
+const hiking = assets.Experience[3]
+const waterfall = assets.Experience[4]
+const vegetable = assets.Experience[5]
+
 const experiences: Experience[] = [
   {
     id: 1,
@@ -28,7 +35,7 @@ const experiences: Experience[] = [
   },
   {
     id: 2,
-    image: assets.Experience[2],
+    image: hot_spring,
     alt: "Hot Springs",
     category: "Nature",
     title: "Hot Springs",
@@ -46,7 +53,7 @@ const experiences: Experience[] = [
   },
   {
     id: 4,
-    image: assets.HeaderPics[0],
+    image: hiking,
     alt: "Hiking",
     category: "Adventure",
     title: "Hiking",
@@ -55,7 +62,7 @@ const experiences: Experience[] = [
   },
   {
     id: 5,
-    image: assets.HeaderPics[1],
+    image: waterfall,
     alt: "Water Fall Outing",
     category: "Nature",
     title: "Water Fall Outing",
@@ -64,7 +71,7 @@ const experiences: Experience[] = [
   },
   {
     id: 6,
-    image: assets.HeaderPics[2],
+    image: vegetable,
     alt: "Vegetable Seeding",
     category: "Farm",
     title: "Vegetable Seeding",

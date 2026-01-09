@@ -20,6 +20,7 @@ import { assets } from "./assets";
 // Imports for OurIntroduction
 import svgPathsIntro from "./imports/svg-s2k3qo3u60";
 const imgImage6 = assets.App[0];
+import heroPictureMain from "./assets/App/HeroPictureMain.jpg";
 
 // Imports for FromTheBlog
 import svgPaths from "./imports/svg-fvw05tb62m";
@@ -41,7 +42,7 @@ function HeroSection() {
         <img
           alt=""
           className="w-full h-full object-cover"
-          src={assets.HeaderPics[1]}
+          src={heroPictureMain as string}
         />
         <div
           className="absolute inset-0"

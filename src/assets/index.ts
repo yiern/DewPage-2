@@ -1,6 +1,7 @@
 // AboutUs folder
 import aboutUs1 from "./AboutUs/IMG-20231104-WA0001.jpg";
 import aboutUs2 from "./AboutUs/IMG-20231104-WA0054.jpg";
+import house2 from "./AboutUs/House_2.jpg";
 
 // HeaderPics folder
 import headerPic1 from "./HeaderPics/20240309_154946.jpg";
@@ -14,6 +15,9 @@ import headerPic6 from "./HeaderPics/IMG-20231104-WA0003.jpg";
 import BerryPicking from "./Experience/BerryPicking.jpeg";
 import FruitsHarvesting from "./Experience/FruitsHarvesting.jpg";
 import HotSprings from "./Experience/HotSprings.jpg";
+import hiking from "./Experience/hiking.jpg";
+import waterfall from "./Experience/waterfall.jpg"
+import vegetable from "./Experience/vegetable.jpg";
 
 // LocalCuisine folder
 import localCuisine1 from "./LocalCuisine/513491872_3420732791400446_5031367189669892808_n.jpg";
@@ -33,9 +37,9 @@ const appImages = Object.values(
 );
 
 export const assets = {
-  AboutUs: [aboutUs1, aboutUs2],
+  AboutUs: [aboutUs1, aboutUs2, house2],
   HeaderPics: [headerPic1, headerPic2, headerPic3, headerPic4, headerPic5, headerPic6],
-  Experience: [BerryPicking, FruitsHarvesting, HotSprings],
+  Experience: [BerryPicking, FruitsHarvesting, HotSprings, hiking, waterfall, vegetable],
   LocalCuisine: [localCuisine1, localCuisine2, localCuisine3, localCuisine4, localCuisine5, localCuisine6, localCuisine7, localCuisine8, localCuisine9, localCuisine10],
   App: appImages,
 };
