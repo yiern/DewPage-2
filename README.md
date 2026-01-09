@@ -13,7 +13,7 @@
 
   Run `npm run deploy` to build and deploy the application to GitHub Pages.
 
-  The app is configured to work at `https://yiern.github.io/DewPage-2/` with proper routing support.
+  The app is configured to work on the custom domain `http://www.dewsegamat.com/` (root path `/`).
 
   **Important:** Make sure GitHub Pages is configured to serve from the `gh-pages` branch:
   1. Go to repository Settings > Pages

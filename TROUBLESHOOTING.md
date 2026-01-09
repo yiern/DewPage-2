@@ -44,7 +44,7 @@ This will:
 
 After a few minutes, your site should be live at:
 ```
-https://yiern.github.io/DewPage-2/
+http://www.dewsegamat.com/
 ```
 
 ### Common Issues
@@ -64,8 +64,8 @@ https://yiern.github.io/DewPage-2/
 #### Issue: "Assets not loading (404 for CSS/JS files)"
 
 **Solution:** 
-1. Verify the `base` setting in `vite.config.ts` matches your repository name
-2. Should be: `base: '/DewPage-2/'`
+1. Verify the `base` setting in `vite.config.ts` is set for a root-domain deploy
+2. Should be: `base: '/'`
 3. Rebuild and redeploy: `npm run deploy`
 
 ### Verification Checklist
@@ -74,7 +74,7 @@ https://yiern.github.io/DewPage-2/
 - [ ] GitHub Pages settings configured to use `gh-pages` branch
 - [ ] Waited at least 3 minutes after configuration change
 - [ ] Cleared browser cache
-- [ ] Site URL is correct: `https://yiern.github.io/DewPage-2/`
+- [ ] Site URL is correct: `http://www.dewsegamat.com/`
 
 ### Still Having Issues?
 
@@ -82,7 +82,7 @@ Check the following:
 1. Repository Settings → Pages → Check for any error messages
 2. Repository Actions tab → Look for failed deployments
 3. Browser Console (F12) → Check for specific error messages
-4. Verify `package.json` has correct `homepage` field: `"homepage": "https://yiern.github.io/DewPage-2"`
+4. Verify `package.json` has correct `homepage` field: `"homepage": "http://www.dewsegamat.com/"`
 
 ### Architecture Notes
 
@@ -92,7 +92,7 @@ Check the following:
 - Works with `npm run dev`
 
 **Production:**
-- `build/index.html` loads bundled `/DewPage-2/assets/index-[hash].js`
+- `build/index.html` loads bundled `/assets/index-[hash].js`
 - All assets are pre-compiled and optimized
 - Served from `gh-pages` branch by GitHub Pages
 
