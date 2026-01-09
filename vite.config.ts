@@ -5,7 +5,7 @@
 
   export default defineConfig({
     plugins: [react()],
-    base : '/DewPage-2/',
+    base : '/',
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
