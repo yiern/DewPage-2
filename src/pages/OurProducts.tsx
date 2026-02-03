@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { PageHeader } from "../components/PageHeader";
-import { assets } from "../assets";
+import { getExperienceImage, getHeaderPic, ExperienceImage, HeaderPic } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 interface Experience {
@@ -16,21 +16,21 @@ interface Experience {
   imagePosition?: string;
 }
 
-const berry_picking = assets.Experience[0]
-const fruits_harvesting = assets.Experience[1]
-const hot_spring = assets.Experience[2]
-const hiking = assets.Experience[3]
-const waterfall = assets.Experience[4]
-const vegetable = assets.Experience[5]
+const berry_picking = getExperienceImage(ExperienceImage.BerryPicking);
+const fruits_harvesting = getExperienceImage(ExperienceImage.FruitsHarvesting);
+const hot_spring = getExperienceImage(ExperienceImage.HotSprings);
+const hiking = getExperienceImage(ExperienceImage.Hiking);
+const waterfall = getExperienceImage(ExperienceImage.Waterfall);
+const vegetable = getExperienceImage(ExperienceImage.Vegetable);
 
 const experiences: Experience[] = [
   {
     id: 1,
-    image: assets.Experience[0],
+    image: getExperienceImage(ExperienceImage.Spa),
     alt: "Body and Face Wellness",
     category: "Wellness",
     title: "Body and Face Wellness",
-    description: "Massage and facial wellness are key components of a holistic self-care routine. Regular massages help to relieve tension, improve circulation, and reduce stress, which contributes to overall physical and mental health.",
+    description: "Massage and facial wellness are key components of a holistic self-care routine. Regular massages help to relieve tension, improve circulation, and reduce stress, which contributes to overall physical and mental health. Facial massages, specifically, enhance skin health by promoting blood flow, reducing puffiness, and encouraging lymphatic drainage. They can also improve skin tone and texture, leaving the face looking more vibrant and youthful. Integrating both body and facial massages into a wellness regimen supports comprehensive well-being and promotes a radiant, relaxed appearance.",
     imagePosition: "object-bottom"
   },
   {
@@ -39,12 +39,12 @@ const experiences: Experience[] = [
     alt: "Hot Springs",
     category: "Nature",
     title: "Hot Springs",
-    description: "Approximately 45-minute drive from the Farm, where you can indulge in the rejuvenating natural hot spring water sourced from underground",
+    description: "Approximately 45-minute drive from the Farm, where you can indulge in the rejuvenating natural hot spring water sourced from underground \n Hot spring water, rich in minerals like sulfur and magnesium, can improve skin conditions, ease muscle and joint pain, and boost blood circulation. The warm water helps reduce stress, and anxiety and promotes better sleep, contributing to overall mental wellness. Additionally, it can enhance respiratory health and strengthen the immune system.",
     imagePosition: "object-bottom"
   },
   {
     id: 3,
-    image: assets.Experience[1],
+    image: fruits_harvesting,
     alt: "Fruits Harvesting (Seasonal)",
     category: "Farm",
     title: "Fruits Harvesting (Seasonal)",
@@ -57,7 +57,7 @@ const experiences: Experience[] = [
     alt: "Hiking",
     category: "Adventure",
     title: "Hiking",
-    description: "Stroll through the rubber tree plantation and durian orchard.You might be able to witness the 'King of Fruits' descending from the trees.",
+    description: "Strolling amidst the rubber tree plantation and durian orchard, observing the labor involved in cultivating the raw materials essential for our daily needs. Amidst durian harvests, you might witness the majestic 'King of Fruits' gracefully descending from the trees. \n Fresh air improves lung function and boosts the immune system by providing a higher oxygen intake, which enhances overall health. It also reduces stress and increases energy levels, promoting better mental clarity and mood.",
     imagePosition: "object-bottom"
   },
   {
@@ -66,7 +66,7 @@ const experiences: Experience[] = [
     alt: "Water Fall Outing",
     category: "Nature",
     title: "Water Fall Outing",
-    description: "Experience a captivating waterfall that immerses you in rushing water.",
+    description: "Experiencing a captivating waterfall immerses you in the symphony of rushing water, with sunlight catching droplets to create rainbows in the mist. The cooler air provides a refreshing sensation while the rising mist adds to the ambiance, enveloping you in a cool, moist embrace. This sensory-rich experience leaves a lasting impression of nature's grandeur.",
     imagePosition: "object-bottom"
   },
   {
@@ -92,7 +92,7 @@ export default function OurProducts() {
       <Nav />
       
       <PageHeader 
-        imageUrl={assets.HeaderPics[5]}
+        imageUrl={getHeaderPic(HeaderPic.AboutHeader)}
         imageAlt="Organic produce and vegetables"
       />
       

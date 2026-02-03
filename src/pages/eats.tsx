@@ -1,49 +1,49 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { PageHeader } from "../components/PageHeader";
-import { assets } from "../assets";
+import { getLocalCuisineImage, getHeaderPic, LocalCuisineImage, HeaderPic } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 export default function Eats() {
   const galleryImages = [
     {
-      url: assets.LocalCuisine[0],
+      url: getLocalCuisineImage(LocalCuisineImage.Food1),
       alt: "Farm fresh food"
     },
     {
-      url: assets.LocalCuisine[1],
+      url: getLocalCuisineImage(LocalCuisineImage.Food2),
       alt: "Organic vegetables plate"
     },
     {
-      url: assets.LocalCuisine[2],
+      url: getLocalCuisineImage(LocalCuisineImage.Food3),
       alt: "Fresh fruit salad"
     },
     {
-      url: assets.LocalCuisine[3],
+      url: getLocalCuisineImage(LocalCuisineImage.Food4),
       alt: "Farm to table"
     },
     {
-      url: assets.LocalCuisine[4],
+      url: getLocalCuisineImage(LocalCuisineImage.Food5),
       alt: "Organic farm produce"
     },
     {
-      url: assets.LocalCuisine[5],
+      url: getLocalCuisineImage(LocalCuisineImage.Food6),
       alt: "Healthy farm meal"
     },
     {
-      url: assets.LocalCuisine[6],
+      url: getLocalCuisineImage(LocalCuisineImage.Food7),
       alt: "Fresh harvest vegetables"
     },
     {
-      url: assets.LocalCuisine[7],
+      url: getLocalCuisineImage(LocalCuisineImage.Food8),
       alt: "Organic food display"
     },
     {
-      url: assets.LocalCuisine[8],
+      url: getLocalCuisineImage(LocalCuisineImage.Food9),
       alt: "Farm fresh eggs"
     },
     {
-      url: assets.LocalCuisine[9],
+      url: getLocalCuisineImage(LocalCuisineImage.Food10),
       alt: "Local cuisine specialty"
     }
   ];
@@ -53,7 +53,7 @@ export default function Eats() {
       <Nav />
       
       <PageHeader 
-        imageUrl={assets.HeaderPics[3]}
+        imageUrl={getHeaderPic(HeaderPic.SocialMedia1)}
         imageAlt="Farm to table dining"
         verticalShiftPercent= {35}
       />

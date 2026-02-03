@@ -1,7 +1,7 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { PageHeader } from "../components/PageHeader";
-import { assets } from "../assets";
+import { getAboutUsImage, AboutUsImage } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 export default function AboutUs() {
@@ -10,7 +10,7 @@ export default function AboutUs() {
       <Nav />
       
       <PageHeader 
-        imageUrl={assets.AboutUs[2]}
+        imageUrl={getAboutUsImage(AboutUsImage.House2)}
         imageAlt="Layout of house"
         verticalShiftPercent= {50}
       />
@@ -47,7 +47,7 @@ export default function AboutUs() {
              <p className="text-[18px] md:text-[22px] mb-[15px] text-center">desc of house</p>
             <div className="mt-[30px] md:mt-[40px] rounded-[10px] overflow-hidden">
               <img
-                src={assets.AboutUs[1]}
+                src={getAboutUsImage(AboutUsImage.About2)}
                 alt="Experience the freshness and beauty of the fruit orchard. Break away from the hustle and bustle of everyday life, enjoy the serenity and the sweetness of nature."
                 className="w-full h-[250px] md:h-[350px] lg:h-[400px] object-cover object-bottom"
               />

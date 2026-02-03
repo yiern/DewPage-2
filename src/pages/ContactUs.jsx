@@ -1,7 +1,7 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { PageHeader } from "../components/PageHeader";
-import { assets } from "../assets";
+import { getHeaderPic, HeaderPic } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 function Frame29() {
@@ -80,7 +80,7 @@ export default function ContactUs() {
       <Nav />
 
       <PageHeader 
-        imageUrl={assets.HeaderPics[2]}
+        imageUrl={getHeaderPic(HeaderPic.Pic2025_07_20)}
         imageAlt="Contact farm office"
       />
       

@@ -1,6 +1,6 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
-import { assets } from "../assets";
+import { getHeaderPic, HeaderPic } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 export default function Services() {
@@ -46,7 +46,7 @@ export default function Services() {
       {/* Hero Image */}
       <div className="relative h-[477px] overflow-hidden">
         <img 
-          src={assets.HeaderPics[1]}
+          src={getHeaderPic(HeaderPic.Pic2024_11_01)}
           alt="Farming services and agriculture"
           className="w-full h-full object-cover object-bottom"
         />

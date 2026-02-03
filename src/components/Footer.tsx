@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import svgPaths from "../imports/svg-fvw05tb62m";
+import svgPaths from "../imports/blogArticleCards";
 
 
 function Text() {

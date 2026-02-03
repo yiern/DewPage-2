@@ -1,6 +1,6 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
-import { assets } from "../assets";
+import { getHeaderPic, HeaderPic } from "../assets";
 import { fontClasses } from "../utils/fontUtils";
 
 export default function Projects() {
@@ -52,7 +52,7 @@ export default function Projects() {
       {/* Hero Image */}
       <div className="relative h-[477px] overflow-hidden">
         <img 
-          src={assets.HeaderPics[0]}
+          src={getHeaderPic(HeaderPic.Pic2024_03_09)}
           alt="Agricultural project farmland"
           className="w-full h-full object-cover object-bottom"
         />

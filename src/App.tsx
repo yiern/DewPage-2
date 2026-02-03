@@ -14,22 +14,19 @@ import OurProducts from "./pages/OurProducts";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Eats from "./pages/eats";
-import { assets } from "./assets";
+import { getAppImage, AppImage } from "./assets";
 
 
 // Imports for OurIntroduction
-import svgPathsIntro from "./imports/svg-s2k3qo3u60";
-const imgImage6 = assets.App[0];
+import svgPathsIntro from "./imports/blogArticleCards";
+const imgImage6 = getAppImage(AppImage.Image1);
 import heroPictureMain from "./assets/App/HeroPictureMain.jpg";
 
 // Imports for FromTheBlog
-import svgPaths from "./imports/svg-fvw05tb62m";
-const imgImage26 = assets.App[4];
-const imgImage27 = assets.App[5];
-const imgImage28 = assets.App[3];
+const imgImage26 = getAppImage(AppImage.Image5);
+const imgImage27 = getAppImage(AppImage.Image6);
+const imgImage28 = getAppImage(AppImage.Image4);
 
-// Imports for AgricultureMattersVideoSection
-import svgPathsVideo from "./imports/svg-8a2thhds0u";
 
 // ============== HeroSection Component ==============
 function HeroSection() {
@@ -108,7 +105,7 @@ function OurIntroduction() {
               <img
                 alt=""
                 className="w-full h-full object-cover"
-                src={assets.App[1] as string}
+                src={getAppImage(AppImage.Image2)}
               />
             </div>
           </div>
@@ -141,13 +138,13 @@ function OurIntroduction() {
 const UserIcon = () => (
   <svg className="block size-5" fill="none" viewBox="0 0 20 20">
     <path
-      d={svgPaths.p27365a00}
+      d={svgPathsIntro.p27365a00}
       stroke="#F7C35F"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
-      d={svgPaths.p32ab0300}
+      d={svgPathsIntro.p32ab0300}
       stroke="#F7C35F"
       strokeLinecap="round"
       strokeLinejoin="round"
