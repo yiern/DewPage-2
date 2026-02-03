@@ -39,7 +39,7 @@ import localCuisine7 from "./LocalCuisine/515503807_10162844457818416_8004931203
 import localCuisine8 from "./LocalCuisine/515510840_10162832516818416_4521275919667916116_n.jpg";
 import localCuisine9 from "./LocalCuisine/515561098_10162832516923416_5840001890163453439_n.jpg";
 import localCuisine10 from "./LocalCuisine/food 1.jpg";
-import { ExperienceImage } from "./enums";
+import { ExperienceImage, AboutUsImage } from "./enums";
 
 // App folder
 const appImages = Object.values(
