@@ -42,6 +42,7 @@ import localCuisine10 from "./LocalCuisine/food 1.jpg";
 import { ExperienceImage, AboutUsImage, HeaderPic, LocalCuisineImage, AppImage } from "./enums";
 
 // App folder
+import rocks from "./App/rocks.jpg";
 const appImages = Object.values(
   import.meta.glob("./App/*.jpg", { eager: true, import: "default" })
 );
@@ -87,7 +88,7 @@ const localCuisineMap = {
 
 const appMap = {
   [AppImage.Image1]: appImages[0],
-  [AppImage.Image2]: appImages[1],
+  [AppImage.Image2]: rocks,
   [AppImage.Image3]: appImages[2],
   [AppImage.Image4]: appImages[3],
   [AppImage.Image5]: appImages[4],

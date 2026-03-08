@@ -25,7 +25,7 @@ function Frame5() {
 function Frame30() {
   return (
     <div className="flex flex-col items-start justify-center">
-      <p className="text-[40px] leading-[48px] text-white">segamat@dew.com</p>
+      <p className="text-[40px] leading-[48px] text-white">Segamatdew@gmail.com</p>
     </div>
   );
 }
