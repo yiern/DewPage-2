@@ -181,7 +181,7 @@ When using Radix UI primitives:
 - Production builds go to `build/` directory
 - GitHub Pages deployment via `gh-pages` branch
 - Custom domain: `http://www.dewsegamat.com/`
-- Build command: `npm run build`
+- **Important**: Run `npm run deploy` to publish changes to GitHub Pages. This command builds the project and pushes the build output to the `gh-pages` branch. Any changes that should be live on the website must be deployed using this command.
 
 ### Best Practices
 
