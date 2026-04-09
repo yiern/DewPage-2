@@ -350,7 +350,7 @@ function ContactSection() {
       label: "Phone",
       values: ["🇸🇬 +65 96524933", "🇲🇾 +60 182025540"],
     },
-    { label: "Email", values: ["Segamat@dew.com"] },
+    { label: "Email", values: ["Segamatdew@gmail.com"] },
     {
       label: "Address",
       values: ["Buloh Kasap, Segamat, Johor, Malaysia"],
